@@ -15,6 +15,7 @@ namespace CodingMilitia.DotNetPerfCuriositiesSample.Benchmarks
                 typeof(Any),
                 typeof(ElementAt),
                 typeof(Count),
+                typeof(InitializeImmutableCollectionProperties)
             };
 
             var summary = BenchmarkRunner.Run(samples[int.Parse(args[0])],

@@ -15,13 +15,13 @@ namespace CodingMilitia.DotNetPerfCuriositiesSample.Benchmarks.SampleCases
         public void EmptyReadonlyCollectionAny() => EmptyReadonlyCollection.Any();
 
         [Benchmark]
-        public void EmptyReadonlyCollectionSome() => EmptyReadonlyCollection.AnyUsingCount();
+        public void EmptyReadonlyCollectionCountGreaterThan0() => EmptyReadonlyCollection.AnyUsingCount();
 
         [Benchmark]
         public void NonEmptyReadonlyCollectionAny() => NonEmptyReadonlyCollection.Any();
 
         [Benchmark]
-        public void NonEmptyReadonlyCollectionSome() => NonEmptyReadonlyCollection.AnyUsingCount();
+        public void NonEmptyReadonlyCollectionCountGreaterThan0() => NonEmptyReadonlyCollection.AnyUsingCount();
 
         [Benchmark]
         public void EmptyReadonlyCollectionLoopAny()
@@ -33,7 +33,7 @@ namespace CodingMilitia.DotNetPerfCuriositiesSample.Benchmarks.SampleCases
         }
 
         [Benchmark]
-        public void EmptyReadonlyCollectionLoopSome()
+        public void EmptyReadonlyCollectionLoopCountGreaterThan0()
         {
             for (var i = 0; i < 1000; ++i)
             {
@@ -51,7 +51,7 @@ namespace CodingMilitia.DotNetPerfCuriositiesSample.Benchmarks.SampleCases
         }
 
         [Benchmark]
-        public void NonEmptyReadonlyCollectionLoopSome()
+        public void NonEmptyReadonlyCollectionLoopCountGreaterThan0()
         {
             for (var i = 0; i < 1000; ++i)
             {
