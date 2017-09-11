@@ -16,7 +16,7 @@ namespace CodingMilitia.DotNetPerfCuriositiesSample.Benchmarks.SampleCases
         [Benchmark]
         public void LoopOnArray()
         {
-            for(var i = 0; i < ArraySize; ++i)
+            for (var i = 0; i < ArraySize; ++i)
             {
                 var v = SampleArray[i];
             }
@@ -25,7 +25,7 @@ namespace CodingMilitia.DotNetPerfCuriositiesSample.Benchmarks.SampleCases
         [Benchmark]
         public void LoopOnArrayAsIEnumerable()
         {
-            for(var i = 0; i < ArraySize; ++i)
+            for (var i = 0; i < ArraySize; ++i)
             {
                 var v = SampleArrayAsIEnumerable.ElementAt(i);
             }
@@ -34,7 +34,7 @@ namespace CodingMilitia.DotNetPerfCuriositiesSample.Benchmarks.SampleCases
         [Benchmark]
         public void LoopOnWrappedArray()
         {
-            for(var i = 0; i < ArraySize; ++i)
+            for (var i = 0; i < ArraySize; ++i)
             {
                 var v = SampleWrappedArray.ElementAt(i);
             }
@@ -43,7 +43,7 @@ namespace CodingMilitia.DotNetPerfCuriositiesSample.Benchmarks.SampleCases
         [Benchmark]
         public void LoopOnYieldedArray()
         {
-            for(var i = 0; i < ArraySize; ++i)
+            for (var i = 0; i < ArraySize; ++i)
             {
                 var v = SampleYieldedArray.ElementAt(i);
             }
